@@ -28,5 +28,6 @@ class Song
       else genre_count[x]=1
       end
     end
+    genre_count
   end
 end
