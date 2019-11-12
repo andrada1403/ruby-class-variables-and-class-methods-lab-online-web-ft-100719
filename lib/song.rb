@@ -16,6 +16,6 @@ class Song
     @@genres<<@genre.uniq
   end
   def self.artists
-    @@artists<<@artist.uniq
+    @@artists<<@artist
   end
 end
