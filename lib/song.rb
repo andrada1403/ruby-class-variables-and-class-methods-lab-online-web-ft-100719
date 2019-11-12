@@ -8,12 +8,14 @@ class Song
     @name=name
     @artist=artist
     @genre=genre
+    @@artists<<@artist
+    @@genres<<@genre
   end
   def self.count
     @@count
   end
   def self.genres
-    @@genres<<@genre.uniq
+    @@genres.uniq
   end
   def self.artists
     @@artists.uniq
